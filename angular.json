@@ -19,7 +19,13 @@
 					"options": {},
 					"configurations": {
 						"production": {
-							"target": "shell:esbuild:production"
+							"target": "shell:esbuild:production",
+              "fileReplacements": [
+                {
+                  "replace": "project/auth/src/environments/environment.ts",
+                  "with": "project/auth/src/environments/environment.prod.ts"
+                }
+              ]
 						},
 						"development": {
 							"target": "shell:esbuild:development",
