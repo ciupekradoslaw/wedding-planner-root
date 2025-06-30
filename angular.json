@@ -16,7 +16,11 @@
 			"architect": {
 				"build": {
 					"builder": "@angular-architects/native-federation:build",
-					"options": {},
+          "options": {
+            "styles": [
+              "@angular/material/prebuilt-themes/cyan-orange.css"
+            ]
+          },
 					"configurations": {
 						"production": {
 							"target": "shell:esbuild:production",
@@ -62,8 +66,9 @@
 							}
 						],
 						"styles": [
-							"projects/shell/src/styles.scss"
-						],
+              "@angular/material/prebuilt-themes/cyan-orange.css",
+              "projects/shell/src/styles.scss"
+            ],
 						"scripts": []
 					}
 				},
@@ -86,6 +91,7 @@
 							}
 						],
 						"styles": [
+              "@angular/material/prebuilt-themes/cyan-orange.css",
 							"projects/shell/src/styles.scss"
 						],
 						"scripts": []
@@ -144,7 +150,11 @@
 			"architect": {
 				"build": {
 					"builder": "@angular-architects/native-federation:build",
-					"options": {},
+          "options": {
+            "styles": [
+              "@angular/material/prebuilt-themes/cyan-orange.css"
+            ]
+          },
 					"configurations": {
 						"production": {
 							"target": "auth:esbuild:production"
@@ -184,8 +194,9 @@
 							}
 						],
 						"styles": [
-							"projects/auth/src/styles.scss"
-						],
+              "@angular/material/prebuilt-themes/cyan-orange.css",
+              "projects/auth/src/styles.scss"
+            ],
 						"scripts": []
 					}
 				},
@@ -208,6 +219,7 @@
 							}
 						],
 						"styles": [
+              "@angular/material/prebuilt-themes/cyan-orange.css",
 							"projects/auth/src/styles.scss"
 						],
 						"scripts": []
